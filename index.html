@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Infinite Scrolling Animation</title>
-<link href="./css/index.css" rel="stylesheet">
-
-<!-- 新增：图片占位符样式，防止首次加载时盒子塌陷变白屏 -->
-<style>
-  .img-box img {
-      background-color: #333333; /* 给还没出来的图片一个深灰暗色背景 */
-      min-width: 160px; /* 强制占位宽度（根据你平时海报大小可自行调整） */
-      min-height: 160px; /* 强制占位高度 */
-      object-fit: cover; /* 保证海报不变形 */
-      color: transparent; /* 隐藏难看的 "unknown" 替代文字 */
-      display: block;
-  }
-</style>
-
+<link href="./css/index.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="scroll img-box" style="--t: 944s">
